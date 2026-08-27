@@ -78,7 +78,7 @@
 
     <script>
         // ⚠️ REPLACE THIS LINK WITH YOUR LIVE RENDER BACKEND PUBLIC URL
-        const API_BASE_URL = "https://onrender.com";
+        const API_BASE_URL = "https://flenima.onrender.com";
 
         let currentSlug = "";
         let plyrInstance = null;
@@ -97,8 +97,6 @@
             const resultsContainer = document.getElementById('search-results');
             resultsContainer.innerHTML = `<div class="status-msg">Searching database...</div>`;
             document.getElementById('video-workspace').style.display = "none";
-
-            const API_BASE_URL = https://flenima.onrender.com;
 
             fetch(`${API_BASE_URL}/search?q=${encodeURIComponent(query)}`)
                 .then(res => res.json())
